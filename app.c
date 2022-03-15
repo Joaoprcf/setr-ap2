@@ -12,8 +12,12 @@ void vInit(double *vec, int size) {
 
 
 double vAvg(double *vec, int size) {
-
-    return 0;
+    double sum = 0;
+    for (size_t i = 0; i < size; i++)
+    {
+        sum += vec[i];
+    }
+    return sum/size;
 }
 
 
